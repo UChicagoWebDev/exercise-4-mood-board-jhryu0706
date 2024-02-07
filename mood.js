@@ -58,7 +58,7 @@ function displayImages(images) {
     let container = document.getElementById('resultsImageContainer');
     images.slice(0,5).forEach(image => {
         let imgElement = document.createElement('img');
-        imgElement.src = image.thumbnailUrl; /
+        imgElement.src = image.thumbnailUrl; 
         imgElement.alt = "Search result image";
         imgElement.addEventListener('click', function() {
             addToMoodBoard(image.contentUrl); 
